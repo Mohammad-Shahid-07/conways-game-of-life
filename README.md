@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Conway's Game of Life
+
+This project is the Conway's Game of Life build using Next.js, Tailwind CSS, Shadcn-ui, and Bun. The game simulates cellular automaton based on a set of rules applied to a 30x30 grid.
+
+## Features
+
+- **Start/Stop Simulation:** Control the game simulation.
+- **Randomize Grid:** Generate a random initial state.
+- **Clear Grid:** Reset the grid to an empty state.
+- **Save and Load Grids:** Save up to 5 grid states and load them as needed.
+- **Speed Control:** Adjust the simulation speed.
+- **Light/Dark Mode:** Toggle between light and dark themes.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js
+- Bun/npm (for bundling and running the project)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/Mohammad-Shahid-07/conways-game-of-life
+   cd conways-game-of-life
+   ```
 
-## Learn More
+2. **Install dependencies:**
+   You can use either Bun or npm to install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   bun install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   or
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Run the development server:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   bun dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   or
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Usage
+
+- **Start/Stop the Game:** Click the "Start" button to begin the simulation and the "Stop" button to pause it.
+- **Randomize the Grid:** Click the "Randomize" button to fill the grid with a random pattern.
+- **Clear the Grid:** Click the "Clear" button to reset the grid to an empty state.
+- **Save the Grid:** Click the "Save" button to save the current grid state. You can save up to 5 different states.
+- **Load a Saved Grid:** Click the "Load" button to choose and load a previously saved grid state.
+- **Delete a Saved Grid:** Click the "Delete" button to remove a saved grid state.
+- **Adjust Speed:** Use the speed control to change the simulation speed.
+- **Toggle Light/Dark Mode:** Use the mode toggle button to switch between light and dark themes.
